@@ -1,1 +1,62 @@
-/*# sourceMappingURL=index.css.map */
+@import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css") layer(Reset);
+@layer Typography {
+  :is(*, *::before, *::after) {
+    content: "";
+    font-family: "Pretendard Variable";
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1rem;
+    color: #222;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.a11y-hidden {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.header {
+  width: 160rem;
+  margin-inline: auto;
+}
+
+.logo img {
+  width: 15rem;
+}
+
+.familysite ul {
+  display: flex;
+  gap: 2rem;
+}
+.familysite ul a {
+  font-size: 5rem;
+  font-weight: 800;
+}
+.familysite ul li {
+  transition: 0.3s;
+}
+.familysite ul li:nth-child(1):hover {
+  color: orange;
+}
+.familysite ul li:nth-child(2):hover {
+  color: tomato;
+}
+.familysite ul li:nth-child(3):hover {
+  color: violet;
+}
+.familysite ul li:nth-child(4):hover {
+  color: skyblue;
+}
+.familysite ul li:nth-child(5):hover {
+  color: silver;
+}/*# sourceMappingURL=index.css.map */
